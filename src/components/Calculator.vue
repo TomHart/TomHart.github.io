@@ -11,8 +11,9 @@
 					<b-input-group>
 						<b-input-group-text slot="prepend">Currently Have</b-input-group-text>
 						<b-form-input type="number" v-model="fromVal"></b-form-input>
-						<b-form-select style="width:auto;flex-grow:0" v-model="fromUnit"
-									   :options="levels"></b-form-select>
+						<b-form-select style="width:auto;flex-grow:0" v-model="fromUnit" :options="levels">
+
+						</b-form-select>
 					</b-input-group>
 				</b-col>
 				<b-col>
@@ -20,16 +21,18 @@
 					<b-input-group>
 						<b-input-group-text slot="prepend">Need</b-input-group-text>
 						<b-form-input type="number" v-model="toVal"></b-form-input>
-						<b-form-select style="width:auto;flex-grow:0" v-model="toUnit"
-									   :options="levels"></b-form-select>
+						<b-form-select style="width:auto;flex-grow:0" v-model="toUnit" :options="levels">
+
+						</b-form-select>
 					</b-input-group>
 				</b-col>
 				<b-col>
 					<b-input-group>
 						<b-input-group-text slot="prepend">Per second</b-input-group-text>
 						<b-form-input type="number" v-model="perSecVal"></b-form-input>
-						<b-form-select style="width:auto;flex-grow:0" v-model="perSecUnit"
-									   :options="levels"></b-form-select>
+						<b-form-select style="width:auto;flex-grow:0" v-model="perSecUnit" :options="levels">
+
+						</b-form-select>
 					</b-input-group>
 				</b-col>
 			</b-row>
@@ -73,14 +76,14 @@
 
 		data() {
 			return {
-				fromVal: 17.23,
-				fromUnit: 'VV',
-				toVal: 22,
-				toUnit: 'VV',
-				perSecVal: 1.5,
-				perSecUnit: 'TT',
-				critChance: 18,
-				critBonus: 2048
+				fromVal: 1,
+				fromUnit: '.00',
+				toVal: 1,
+				toUnit: '.00',
+				perSecVal: 1,
+				perSecUnit: '.00',
+				critChance: 0,
+				critBonus: 0
 			}
 		},
 
