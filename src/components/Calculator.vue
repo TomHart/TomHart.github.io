@@ -83,7 +83,7 @@
 				perSecVal: 1,
 				perSecUnit: '.00',
 				critChance: 0,
-				critBonus: 0
+				critBonus: 1
 			}
 		},
 
