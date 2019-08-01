@@ -1,0 +1,10 @@
+// https://web.archive.org/web/20190801081017/https://digitalsynopsis.com/design/beautiful-color-palettes-combinations-schemes/
+// 23: Metro UI Colors
+// #d11141 • #00b159 • #00AEDB • #f37735 • #ffc425
+
+$theme-colors: (
+		"primary":#00b159,
+		"danger":#ff4136
+);
+
+@import "~bootstrap/scss/bootstrap";
