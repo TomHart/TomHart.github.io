@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Home from './components/Home'
+import Calculator from './components/Calculator'
+import games from './games';
 
 Vue.use(VueRouter);
 
@@ -7,12 +10,10 @@ const routes = [
 	{
 		path: '/',
 		name: 'home',
-		component: require('./components/Home').default
+		component: Home
 	}
 ];
 
-
-const games = require('./games').default;
 
 for (let gameIndex in games) {
 	const game = games[gameIndex];
@@ -20,7 +21,7 @@ for (let gameIndex in games) {
 	routes.push({
 		path: '/calculator',
 		name: game.routeName,
-		component: require('./components/Calculator').default,
+		component: Calculator,
 		meta: {
 			name: game.name,
 			levels: game.levels
